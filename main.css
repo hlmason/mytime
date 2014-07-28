@@ -12,13 +12,13 @@ a, .glyphicon:not(.glyphicon-search) {
 
 li { 
 	list-style-type: none;
-}
+}*/
 
 a:hover, a:focus {
 	text-decoration: none;
-}*/
+}
 
-a:hover, a:focus, .glyphicon:hover, .glyphicon:focus {
+a:hover, a:focus, .glyphicon:not(.glyphicon-search):hover, .glyphicon:not(.glyphicon-search):focus {
 	color: #999;
 	cursor: pointer;
 }
@@ -74,6 +74,10 @@ form {
 	color: #999;
 }
 
+.glyphicon-search:hover {
+	color: #48D1CC;
+}
+
 input {
 	background-color: #e7e7e7;
 	border: none;
@@ -101,6 +105,8 @@ input {
 
 .filter-n-map-header {
 	display: inline-block;
+	font-size: 20px;
+	font-weight: 400;
 	margin-bottom: 0;
 	margin-left: 3px;
 	margin-top: 0;
