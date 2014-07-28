@@ -71,26 +71,36 @@
 		</div>
 
 		<div class="row">
-			<div class="col-xs-6">
-				<ul>
+			<div class="col-xs-4">
 					<?php foreach($mytime_data as $business_data) 
 						{
-							echo '<li>' . $business_data["yelp_rating"] . '</li>';
-							// echo $business_datum;
+							echo '<li>';
+							echo '<img src="' . $business_data["photo_url"] . '" alt="Photo of business owner">';
+							echo '</li>';
 						}
 					?>
-				</ul>
 			</div>
-			<div class="col-xs-6">
+			<div class="col-xs-8">
 				<ul>
 					<?php foreach($mytime_data as $business_data) 
 						{
-							echo '<li>' . $business_data["name"] . '</li>';
-							// echo $business_datum;
+							echo '<li><h3 class="business-name">' . $business_data["name"] . '<h3></li>';
+							echo '<li><h3 class="business-name">' . $business_data["city"] . '<h3></li>';
+							echo '<li><h3 class="business-name">' . $business_data["next_appointment_times"][0] . '<h3></li>';
 						}
 					?>
 				</ul>
 			</div> 
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+					<?php foreach($mytime_data as $business_data) 
+						{
+							// echo '<li><img src="' . $business_data["yelp_rating_image_url"] . '" alt="' . $business_data["yelp_rating"] . '</li>';
+						}
+					?>
+			</div>
 		</div>
 	
 	</div>
