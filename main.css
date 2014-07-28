@@ -8,11 +8,11 @@ a, .glyphicon:not(.glyphicon-search) {
 /*img {
 	max-width: 100%;
 	height: auto;
-}
+}*/
 
 li { 
 	list-style-type: none;
-}*/
+}
 
 a:hover, a:focus {
 	text-decoration: none;

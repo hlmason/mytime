@@ -10,6 +10,11 @@
     <!-- [endif] -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <?php
+    	$mytime_data_url = "http://www.mytime.com/api/v1/deals.json?what=Massage&when=Anytime&where=34.052200,-118.242800";
+    	$mytime_data_json = file_get_contents($mytime_data_url);
+    	$mytime_data = json_decode($mytime_data_json, TRUE);
+	?>
 </head>
 <body>
 
@@ -67,10 +72,24 @@
 
 		<div class="row">
 			<div class="col-xs-6">
-
+				<ul>
+					<?php foreach($mytime_data as $business_data) 
+						{
+							echo '<li>' . $business_data["yelp_rating"] . '</li>';
+							// echo $business_datum;
+						}
+					?>
+				</ul>
 			</div>
 			<div class="col-xs-6">
-				<h3></h3>
+				<ul>
+					<?php foreach($mytime_data as $business_data) 
+						{
+							echo '<li>' . $business_data["name"] . '</li>';
+							// echo $business_datum;
+						}
+					?>
+				</ul>
 			</div> 
 		</div>
 	
