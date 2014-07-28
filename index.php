@@ -52,12 +52,16 @@
 
 		<div class="row">
 			<div class="col-xs-6 filter-n-map-container">
-				<span class="glyphicon glyphicon-filter"></span>
-				<h3 class="filter-n-map-header">Filter</h3>
+				<a>
+					<span class="glyphicon glyphicon-filter"></span>
+					<h3 class="filter-n-map-header">Filter</h3>
+				</a>
 			</div>
 			<div class="col-xs-6 filter-n-map-container">
-				<span class="glyphicon glyphicon-globe"></span>
-				<h3 class="filter-n-map-header">Map</h3>
+				<a>
+					<span class="glyphicon glyphicon-globe"></span>
+					<h3 class="filter-n-map-header">Map</h3>
+				</a>
 			</div>
 		</div>
 

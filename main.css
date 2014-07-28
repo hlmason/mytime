@@ -1,7 +1,7 @@
 /* ===================================
     Global
 =================================== */
-.glyphicon:not(.glyphicon-search) {
+a, .glyphicon:not(.glyphicon-search) {
 	color: #48D1CC;
 }
 
@@ -16,11 +16,12 @@ li {
 
 a:hover, a:focus {
 	text-decoration: none;
-}
-
-a:hover {
-	cursor: pointer;
 }*/
+
+a:hover, a:focus, .glyphicon:hover, .glyphicon:focus {
+	color: #999;
+	cursor: pointer;
+}
 
 /* ===================================
     Nav
@@ -82,16 +83,18 @@ input {
 	width: 315px;
 }
 
-.filter-n-map-container{
+.filter-n-map-container {
+	border-bottom: 2px solid lightgray;
 	text-align: center;
 }
 
 .filter-n-map-container:first-child {
-	border: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+	border-top: 1px solid lightgray;
 }
 
 .filter-n-map-container:last-child {
-	border-bottom: 1px solid lightgray;
 	border-right: 1px solid lightgray;
 	border-top: 1px solid lightgray;
 }
@@ -106,7 +109,3 @@ input {
 	text-align: center;
 }
 
-.filter-n-map-header h3 {
-
-
-}
