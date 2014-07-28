@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>MyTime Exercise></title>
 	<!-- [if lt IE 9]> -->
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -70,13 +70,12 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row" id="img-n-name-container">
 			<div class="col-xs-4">
 					<?php foreach($mytime_data as $business_data) 
 						{
-							echo '<li>';
 							echo '<img src="' . $business_data["photo_url"] . '" alt="Photo of business owner">';
-							echo '</li>';
+							echo '<li><img src="' . $business_data["yelp_rating_image_url"] . '" alt="' . $business_data["yelp_rating"] . '"><img src="yelp-logo.png" alt="Yelp logo"></li>';
 						}
 					?>
 			</div>
@@ -84,9 +83,10 @@
 				<ul>
 					<?php foreach($mytime_data as $business_data) 
 						{
-							echo '<li><h3 class="business-name">' . $business_data["name"] . '<h3></li>';
-							echo '<li><h3 class="business-name">' . $business_data["city"] . '<h3></li>';
-							echo '<li><h3 class="business-name">' . $business_data["next_appointment_times"][0] . '<h3></li>';
+							echo '<li><h3 class="business-data-header first">' . $business_data["name"] . '<h3></li>';
+							echo '<li><h3 class="business-data-header">' . $business_data["modifiers_values"][0] . '<h3></li>';
+							echo '<li><h3 class="business-data-header">' . $business_data["city"] . '<h3></li>';
+							echo '<li><h3 class="business-data-header">Next appt ' . $business_data["next_appointment_times"][0] . '<h3></li>';
 						}
 					?>
 				</ul>
@@ -97,7 +97,10 @@
 			<div class="col-xs-12">
 					<?php foreach($mytime_data as $business_data) 
 						{
-							// echo '<li><img src="' . $business_data["yelp_rating_image_url"] . '" alt="' . $business_data["yelp_rating"] . '</li>';
+							// if isset($_GET["yelp_rating_image_url"]) 
+							// {
+								// echo '<li><img src="' . $business_data["yelp_rating_image_url"] . '" alt="' . $business_data["yelp_rating"] . '"><img src="yelp-logo.png" alt="Yelp logo"></li>';
+							// }
 						}
 					?>
 			</div>

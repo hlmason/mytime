@@ -1,0 +1,132 @@
+/* ===================================
+    Variables
+=================================== */
+$mytime-blue: #319fb5;
+
+/* ===================================
+    Global
+=================================== */
+ul {
+	padding-left: 0;
+}
+
+li { 
+	list-style-type: none;
+}
+
+a, .glyphicon:not(.glyphicon-search) {
+	color: $mytime-blue;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+a:hover, a:focus, .glyphicon:not(.glyphicon-search):hover, .glyphicon:not(.glyphicon-search):focus {
+	color: #999;
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ===================================
+    Nav
+=================================== */
+.navbar, .navbar-toggle {
+	border: none;
+}
+
+.navbar {
+	background-color: white;
+}
+
+.navbar-toggle {
+	margin-top: 10px;
+}
+
+.icon-bar {
+	background-color: $mytime-blue !important;
+}
+
+/* ===================================
+    Search
+=================================== */
+h2#search-header {
+	font-weight: 100;
+	left: 130px;
+	letter-spacing: 2px;
+	position: absolute;
+	top: -10px;
+}
+
+#form-container {
+	margin: 0 auto;
+	form {
+		background-color: #e7e7e7;
+		-moz-border-radius: 5px;
+			 border-radius: 5px;
+		margin-bottom: 10px;
+		padding: 10px;
+		.glyphicon-search {
+			color: #999;
+			&:hover {
+				color: $mytime-blue;
+			}
+		}
+		input {
+			background-color: #e7e7e7;
+			border: none;
+			font-size: 20px;
+			font-weight: 200;
+			letter-spacing: 1px;
+			width: 315px;
+		}
+	}
+}
+
+.filter-n-map-container {
+	border-bottom: 2px solid lightgray;
+	margin-bottom: 15px;
+	text-align: center;
+	&:first-child {
+		border-left: 1px solid lightgray;
+		border-right: 1px solid lightgray;
+		border-top: 1px solid lightgray;
+	}
+	&:last-child {
+		border-right: 1px solid lightgray;
+		border-top: 1px solid lightgray;
+	}
+	h3.filter-n-map-header {
+		display: inline-block;
+		font-size: 20px;
+		font-weight: 400;
+		margin-bottom: 0;
+		margin-left: 3px;
+		margin-top: 0;
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+}
+
+/* ===================================
+    Results
+=================================== */
+#img-n-name-container img {
+	margin-bottom: 15px;
+}
+
+h3.business-data-header {
+	font-size: 14px;
+	margin-bottom: 15px;
+	&.first {
+		margin-top: 0;
+	}
+	&:not(.first) {
+		font-weight: 200;
+		margin-top: -15px;
+	}
+}
