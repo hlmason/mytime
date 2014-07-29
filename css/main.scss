@@ -2,6 +2,7 @@
     Variables
 =================================== */
 $mytime-blue: #319fb5;
+$primary-border: 1px solid lightgray;
 
 /* ===================================
     Global
@@ -92,13 +93,13 @@ h2#search-header {
 	margin-bottom: 15px;
 	text-align: center;
 	&:first-child {
-		border-left: 1px solid lightgray;
-		border-right: 1px solid lightgray;
-		border-top: 1px solid lightgray;
+		border-left: $primary-border;
+		border-right: $primary-border;
+		border-top: $primary-border;
 	}
 	&:last-child {
-		border-right: 1px solid lightgray;
-		border-top: 1px solid lightgray;
+		border-right: $primary-border;
+		border-top: $primary-border;
 	}
 	h3.filter-n-map-header {
 		display: inline-block;
