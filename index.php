@@ -86,7 +86,8 @@
 							echo '<li><h3 class="business-data-header first">' . $business_data["name"] . '<h3></li>';
 							echo '<li><h3 class="business-data-header">' . $business_data["modifiers_values"][0] . '<h3></li>';
 							echo '<li><h3 class="business-data-header">' . $business_data["city"] . '<h3></li>';
-							echo '<li><h3 class="business-data-header">Next appt ' . $business_data["next_appointment_times"][0] . '<h3></li>';
+							echo '<li><h3 class="business-data-header"><span class="glyphicon glyphicon-flash"></span><span>Next appt ' . $business_data["next_appointment_times"][0] . '</span><h3></li>';
+							echo '<li><h3 class="business-data-header">$' . $business_data["min_price"] . ' - ' . $business_data["max_price"] . '<h3></li>';
 						}
 					?>
 				</ul>

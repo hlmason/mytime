@@ -104,3 +104,7 @@ h3.business-data-header {
   h3.business-data-header:not(.first) {
     font-weight: 200;
     margin-top: -15px; }
+  h3.business-data-header .glyphicon-flash {
+    color: #DAA520 !important; }
+  h3.business-data-header span {
+    color: #319fb5 !important; }
