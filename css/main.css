@@ -71,7 +71,6 @@ h2#search-header {
 
 .filter-n-map-container {
   border-bottom: 2px solid lightgray;
-  margin-bottom: 15px;
   text-align: center; }
   .filter-n-map-container:first-child {
     border-left: 1px solid lightgray;
@@ -93,18 +92,31 @@ h2#search-header {
 /* ===================================
     Results
 =================================== */
-#img-n-name-container img {
-  margin-bottom: 15px; }
+#results-container {
+  background-color: #e7e7e7;
+  padding-top: 15px; }
+  #results-container #photo {
+    margin-bottom: 15px; }
+  #results-container .yelp-rating {
+    margin-bottom: 30px; }
+  #results-container h3.business-data {
+    font-size: 15px; }
+    #results-container h3.business-data:not(.first) {
+      font-weight: 200;
+      margin-top: -15px; }
+    #results-container h3.business-data .glyphicon-flash {
+      color: #DAA520 !important; }
+    #results-container h3.business-data span {
+      color: #319fb5 !important; }
 
-h3.business-data-header {
-  font-size: 14px;
-  margin-bottom: 15px; }
-  h3.business-data-header.first {
-    margin-top: 0; }
-  h3.business-data-header:not(.first) {
-    font-weight: 200;
-    margin-top: -15px; }
-  h3.business-data-header .glyphicon-flash {
-    color: #DAA520 !important; }
-  h3.business-data-header span {
-    color: #319fb5 !important; }
+section.business-data:last-child,
+section.business-data:nth-last-child(2),
+section.business-data:nth-last-child(3),
+section.business-data:nth-last-child(4),
+section.business-data:nth-last-child(5),
+section.business-data:nth-last-child(6),
+section.business-data:nth-last-child(7),
+section.business-data:nth-last-child(8),
+section.business-data:nth-last-child(9),
+section.business-data:nth-last-child(10) {
+  margin-top: 66px; }
