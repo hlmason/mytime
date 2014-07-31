@@ -126,10 +126,28 @@ h2#search-header {
 	background-color: #e7e7e7;
 	padding-top: 15px;
 	width: 100%;
+	#col-xs-7 {
+		padding-left: 0;
+	}
+	#col-xs-5 {
+		padding-right: 0;
+	} 
 	#results-container {
-		@include border-radius(10px);
 		background-color: white;
-		height: 160px;
+		height: 140px;
+	}
+	#results-container.first {
+		border-bottom-left-radius: 10px;
+		border-top-left-radius: 10px;
+	}
+	#photo {
+		border-top-left-radius: 10px;
+	}
+	#results-container.second {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		padding-left: 10px;
+		padding-top: 10px;
 	}
 	#photo {
 		margin-bottom: 15px;
@@ -145,12 +163,13 @@ h2#search-header {
 			margin-bottom: 0;
 			margin-top: 0;
 			// padding-right: 10px;
-			padding-top: 10px;
+			// padding-top: 10px;
 			&:not(.first) {
 				font-weight: 200;
 			}
 			&.last {
 				font-weight: bold;
+				margin-top: 3px;
 			}
 			.glyphicon-flash {
 				color: #DAA520 !important;

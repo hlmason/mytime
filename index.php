@@ -74,20 +74,20 @@
 		
 		<div class="container">
 			<div class="row" >
-					<div class="col-xs-5">
+					<div class="col-xs-5" id="col-xs-5">
 						<?php foreach($mytime_data as $business_data) 
 							{
-								echo '<div id="results-container">';
+								echo '<div class="first" id="results-container">';
 									echo '<img id="photo" src="' . $business_data["photo_url"] . '" alt="Photo of business owner">';
 									echo '<img class="yelp-rating" src="' . $business_data["yelp_rating_image_url"] . '" alt="' . $business_data["yelp_rating"] . '"> <img class="yelp-rating" src="yelp-logo.png" alt="Yelp logo">';
 								echo '</div>';
 							}
 						?>
 					</div>
-					<div class="col-xs-7">
+					<div class="col-xs-7" id="col-xs-7">
 						<?php foreach($mytime_data as $business_data) 
 							{
-								echo '<div id="results-container">';
+								echo '<div class="second" id="results-container">';
 									echo '<ul class="business-data">';
 										echo '<li><h3 class="business-data first">' . $business_data["name"] . '</h3></li>';
 										echo '<li><h3 class="business-data">' . $business_data["service_name"] . '</h3></li>';
