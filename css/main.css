@@ -2,6 +2,9 @@
     Variables
 =================================== */
 /* ===================================
+    Mixins
+=================================== */
+/* ===================================
     Global
 =================================== */
 ul {
@@ -92,22 +95,44 @@ h2#search-header {
 /* ===================================
     Results
 =================================== */
-#results-container {
+#results-background {
   background-color: #e7e7e7;
-  padding-top: 15px; }
-  #results-container #photo {
+  padding-top: 15px;
+  width: 100%; }
+  #results-background #results-container {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: white;
+    height: 160px; }
+  #results-background #photo {
     margin-bottom: 15px; }
-  #results-container .yelp-rating {
+  #results-background .yelp-rating {
     margin-bottom: 30px; }
-  #results-container ul.business-data {
-    margin-bottom: 60.5px; }
-    #results-container ul.business-data h3.business-data {
+  #results-background ul.business-data {
+    margin-bottom: 31px; }
+    #results-background ul.business-data h3.business-data {
       font-size: 15px;
+      line-height: 18px;
       margin-bottom: 0;
-      margin-top: 0; }
-      #results-container ul.business-data h3.business-data:not(.first) {
+      margin-top: 0;
+      padding-top: 10px; }
+      #results-background ul.business-data h3.business-data:not(.first) {
         font-weight: 200; }
-      #results-container ul.business-data h3.business-data .glyphicon-flash {
+      #results-background ul.business-data h3.business-data.last {
+        font-weight: bold; }
+      #results-background ul.business-data h3.business-data .glyphicon-flash {
         color: #DAA520 !important; }
-      #results-container ul.business-data h3.business-data span {
+      #results-background ul.business-data h3.business-data span#blue {
         color: #319fb5 !important; }
+      #results-background ul.business-data h3.business-data span#sale {
+        background-color: red;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+        color: white;
+        font-weight: normal;
+        letter-spacing: 2px;
+        padding-bottom: 2px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        text-transform: uppercase; }
