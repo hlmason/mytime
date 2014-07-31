@@ -99,24 +99,15 @@ h2#search-header {
     margin-bottom: 15px; }
   #results-container .yelp-rating {
     margin-bottom: 30px; }
-  #results-container h3.business-data {
-    font-size: 15px; }
-    #results-container h3.business-data:not(.first) {
-      font-weight: 200;
-      margin-top: -15px; }
-    #results-container h3.business-data .glyphicon-flash {
-      color: #DAA520 !important; }
-    #results-container h3.business-data span {
-      color: #319fb5 !important; }
-
-section.business-data:last-child,
-section.business-data:nth-last-child(2),
-section.business-data:nth-last-child(3),
-section.business-data:nth-last-child(4),
-section.business-data:nth-last-child(5),
-section.business-data:nth-last-child(6),
-section.business-data:nth-last-child(7),
-section.business-data:nth-last-child(8),
-section.business-data:nth-last-child(9),
-section.business-data:nth-last-child(10) {
-  margin-top: 66px; }
+  #results-container ul.business-data {
+    margin-bottom: 60.5px; }
+    #results-container ul.business-data h3.business-data {
+      font-size: 15px;
+      margin-bottom: 0;
+      margin-top: 0; }
+      #results-container ul.business-data h3.business-data:not(.first) {
+        font-weight: 200; }
+      #results-container ul.business-data h3.business-data .glyphicon-flash {
+        color: #DAA520 !important; }
+      #results-container ul.business-data h3.business-data span {
+        color: #319fb5 !important; }

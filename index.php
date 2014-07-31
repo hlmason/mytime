@@ -72,27 +72,25 @@
 
 		<div class="row" id="results-container">
 			<div class="col-xs-5">
-					<?php foreach($mytime_data as $business_data) 
-						{
-							echo '<img id="photo" src="' . $business_data["photo_url"] . '" alt="Photo of business owner">';
-							echo '<img class="yelp-rating" src="' . $business_data["yelp_rating_image_url"] . '" alt="' . $business_data["yelp_rating"] . '"> <img class="yelp-rating" src="yelp-logo.png" alt="Yelp logo">';
-						}
-					?>
+				<?php foreach($mytime_data as $business_data) 
+					{
+						echo '<img id="photo" src="' . $business_data["photo_url"] . '" alt="Photo of business owner">';
+						echo '<img class="yelp-rating" src="' . $business_data["yelp_rating_image_url"] . '" alt="' . $business_data["yelp_rating"] . '"> <img class="yelp-rating" src="yelp-logo.png" alt="Yelp logo">';
+					}
+				?>
 			</div>
 			<div class="col-xs-7">
-				<ul>
-					<?php foreach($mytime_data as $business_data) 
-						{
-							echo '<section class="business-data">';
-							echo '<li><h3 class="business-data first">' . $business_data["name"] . '<h3></li>';
-							echo '<li><h3 class="business-data">' . $business_data["modifiers_values"][0] . '<h3></li>';
-							echo '<li><h3 class="business-data">' . $business_data["city"] . '<h3></li>';
-							echo '<li><h3 class="business-data"><span class="glyphicon glyphicon-flash"></span><span>Next appt ' . $business_data["next_appointment_times"][0] . '</span><h3></li>';
-							echo '<li><h3 class="business-data">$' . $business_data["min_price"] . ' - ' . $business_data["max_price"] . '<h3></li>';
-							echo '</section>';
-						}
-					?>
-				</ul>
+				<?php foreach($mytime_data as $business_data) 
+					{
+						echo '<ul class="business-data">';
+							echo '<li><h3 class="business-data first">' . $business_data["name"] . '</h3></li>';
+							echo '<li><h3 class="business-data">' . $business_data["modifiers_values"][0] . '</h3></li>';
+							echo '<li><h3 class="business-data">' . $business_data["city"] . '</h3></li>';
+							echo '<li><h3 class="business-data"><span class="glyphicon glyphicon-flash"></span><span>Next appt ' . $business_data["next_appointment_times"][0] . '</span></h3></li>';
+							echo '<li><h3 class="business-data">$' . $business_data["min_price"] . ' - ' . $business_data["max_price"] . '</h3></li>';
+						echo '</ul>';
+					}
+				?>
 			</div> 
 		</div>
 	
