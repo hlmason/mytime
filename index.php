@@ -79,7 +79,7 @@
 							{
 								echo '<div class="results-container first">';
 									echo '<img src="' . $business_data["photo_url"] . '" alt="Photo of business owner">';
-									echo '<img class="yelp-rating" src="' . $business_data["yelp_rating_image_url"] . '" alt="' . $business_data["yelp_rating"] . '"> <img class="yelp-rating" src="yelp-logo.png" alt="Yelp logo">';
+									echo '<img id="yelp-rating" src="' . $business_data["yelp_rating_image_url"] . '" alt="' . $business_data["yelp_rating"] . '"> <img id="yelp-logo" src="yelp-logo.png" alt="Yelp logo">';
 								echo '</div>';
 							}
 						?>

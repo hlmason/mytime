@@ -150,9 +150,14 @@ h2#search-header {
 			padding-left: 10px;
 			padding-top: 10px;
 		}
-		.yelp-rating {
+		#yelp-rating, #yelp-logo {
 			margin-bottom: 30px;
-			margin-left: 8px;
+		}
+		#yelp-rating {
+			margin-left: 15px;
+		}
+		#yelp-logo {
+			margin-left: 2px;
 		}
 		ul.business-data {
 			margin-bottom: 31px;

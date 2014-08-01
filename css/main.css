@@ -118,9 +118,12 @@ h2#search-header {
       border-bottom-right-radius: 10px;
       padding-left: 10px;
       padding-top: 10px; }
-    #results-background .results-container .yelp-rating {
-      margin-bottom: 30px;
-      margin-left: 8px; }
+    #results-background .results-container #yelp-rating, #results-background .results-container #yelp-logo {
+      margin-bottom: 30px; }
+    #results-background .results-container #yelp-rating {
+      margin-left: 15px; }
+    #results-background .results-container #yelp-logo {
+      margin-left: 2px; }
     #results-background .results-container ul.business-data {
       margin-bottom: 31px; }
       #results-background .results-container ul.business-data h3.business-data {
