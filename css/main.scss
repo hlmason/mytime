@@ -132,62 +132,57 @@ h2#search-header {
 	#col-xs-5 {
 		padding-right: 0;
 	} 
-	#results-container {
+	.results-container {
 		background-color: white;
 		height: 140px;
-	}
-	#results-container.first {
-		border-bottom-left-radius: 10px;
-		border-top-left-radius: 10px;
-	}
-	#photo {
-		border-top-left-radius: 10px;
-	}
-	#results-container.second {
-		border-top-right-radius: 10px;
-		border-bottom-right-radius: 10px;
-		padding-left: 10px;
-		padding-top: 10px;
-	}
-	#photo {
 		margin-bottom: 15px;
-	}
-	.yelp-rating {
-		margin-bottom: 30px;
-	}
-	ul.business-data {
-		margin-bottom: 31px;
-		h3.business-data {
-			font-size: 15px;
-			line-height: 18px;
-			margin-bottom: 0;
-			margin-top: 0;
-			// padding-right: 10px;
-			// padding-top: 10px;
-			&:not(.first) {
-				font-weight: 200;
-			}
-			&.last {
-				font-weight: bold;
-				margin-top: 3px;
-			}
-			.glyphicon-flash {
-				color: #DAA520 !important;
-			}
-			span#blue {
-				color: $mytime-blue !important;
-			}
-			span#sale {
-				background-color: red;
-				@include border-radius(6px);
-				color: white;
-				font-weight: normal;
-				letter-spacing: 2px;
-				padding-bottom: 2px;
-				padding-left: 8px;
-				padding-right: 8px;
-				padding-top: 2px;
-				text-transform: uppercase;
+		&.first {
+			border-bottom-left-radius: 10px;
+			border-top-left-radius: 10px;
+		}
+		img:first-child { // Business/owner photo
+			border-top-left-radius: 10px;
+			margin-bottom: 15px;
+		}
+		&.second {
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		.yelp-rating {
+			margin-bottom: 30px;
+			margin-left: 8px;
+		}
+		ul.business-data {
+			margin-bottom: 31px;
+			h3.business-data {
+				font-size: 15px;
+				line-height: 18px;
+				margin-bottom: 0;
+				margin-top: 0;
+				&:not(.first) {
+					font-weight: 200;
+				}
+				&.last {
+					font-weight: bold;
+					margin-top: 3px;
+				}
+				.glyphicon-flash {
+					color: #DAA520 !important;
+				}
+				span#blue {
+					color: $mytime-blue !important;
+				}
+				span#sale {
+					background-color: red;
+					@include border-radius(6px);
+					color: white;
+					font-weight: normal;
+					letter-spacing: 1.5px;
+					padding: 2px 8px;
+					text-transform: uppercase;
+				}
 			}
 		}
 	}

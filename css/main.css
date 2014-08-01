@@ -103,48 +103,46 @@ h2#search-header {
     padding-left: 0; }
   #results-background #col-xs-5 {
     padding-right: 0; }
-  #results-background #results-container {
+  #results-background .results-container {
     background-color: white;
-    height: 140px; }
-  #results-background #results-container.first {
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px; }
-  #results-background #photo {
-    border-top-left-radius: 10px; }
-  #results-background #results-container.second {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-left: 10px;
-    padding-top: 10px; }
-  #results-background #photo {
+    height: 140px;
     margin-bottom: 15px; }
-  #results-background .yelp-rating {
-    margin-bottom: 30px; }
-  #results-background ul.business-data {
-    margin-bottom: 31px; }
-    #results-background ul.business-data h3.business-data {
-      font-size: 15px;
-      line-height: 18px;
-      margin-bottom: 0;
-      margin-top: 0; }
-      #results-background ul.business-data h3.business-data:not(.first) {
-        font-weight: 200; }
-      #results-background ul.business-data h3.business-data.last {
-        font-weight: bold;
-        margin-top: 3px; }
-      #results-background ul.business-data h3.business-data .glyphicon-flash {
-        color: #DAA520 !important; }
-      #results-background ul.business-data h3.business-data span#blue {
-        color: #319fb5 !important; }
-      #results-background ul.business-data h3.business-data span#sale {
-        background-color: red;
-        -moz-border-radius: 6px;
-        border-radius: 6px;
-        color: white;
-        font-weight: normal;
-        letter-spacing: 2px;
-        padding-bottom: 2px;
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-top: 2px;
-        text-transform: uppercase; }
+    #results-background .results-container.first {
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px; }
+    #results-background .results-container img:first-child {
+      border-top-left-radius: 10px;
+      margin-bottom: 15px; }
+    #results-background .results-container.second {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding-left: 10px;
+      padding-top: 10px; }
+    #results-background .results-container .yelp-rating {
+      margin-bottom: 30px;
+      margin-left: 8px; }
+    #results-background .results-container ul.business-data {
+      margin-bottom: 31px; }
+      #results-background .results-container ul.business-data h3.business-data {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 0;
+        margin-top: 0; }
+        #results-background .results-container ul.business-data h3.business-data:not(.first) {
+          font-weight: 200; }
+        #results-background .results-container ul.business-data h3.business-data.last {
+          font-weight: bold;
+          margin-top: 3px; }
+        #results-background .results-container ul.business-data h3.business-data .glyphicon-flash {
+          color: #DAA520 !important; }
+        #results-background .results-container ul.business-data h3.business-data span#blue {
+          color: #319fb5 !important; }
+        #results-background .results-container ul.business-data h3.business-data span#sale {
+          background-color: red;
+          -moz-border-radius: 6px;
+          border-radius: 6px;
+          color: white;
+          font-weight: normal;
+          letter-spacing: 1.5px;
+          padding: 2px 8px;
+          text-transform: uppercase; }
