@@ -16,11 +16,11 @@ li {
 a, .glyphicon:not(.glyphicon-search) {
   color: #319fb5; }
 
-a:hover, a:focus {
+a:hover, a:focus, .glyphicon:not(.glyphicon-search):hover {
+  color: #999;
   text-decoration: none; }
 
-a:hover, a:focus, .glyphicon:not(.glyphicon-search):hover, .glyphicon:not(.glyphicon-search):focus {
-  color: #999;
+a:hover {
   cursor: pointer; }
 
 img {
